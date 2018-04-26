@@ -41,3 +41,21 @@ body{font-size:62.5%;}
 #footer .we2 a { color: #fff; display: block; }
 
 video{width:90%;margin:1rem auto;margin-left:5%;background:#000}
+
+.wx1 {
+	padding-right: 15%;
+}
+
+#qqright {
+	position: fixed;
+	z-index: 999;
+	top: 50%;
+	right: 0;
+}
+
+#qqleft {
+	position: fixed;
+	z-index: 999;
+	top: 50%;
+	left: 0;
+}
