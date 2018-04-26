@@ -42,8 +42,16 @@ body{font-size:62.5%;}
 
 video{width:90%;margin:1rem auto;margin-left:5%;background:#000}
 
+.wx1, .wx2 {
+	max-width: 35%;
+}
+
 .wx1 {
-	padding-right: 15%;
+	padding-right: 7%;
+}
+
+.wx2 {
+	padding-left: 7%;
 }
 
 #qqright {
@@ -58,4 +66,8 @@ video{width:90%;margin:1rem auto;margin-left:5%;background:#000}
 	z-index: 999;
 	top: 50%;
 	left: 0;
+}
+
+.weixin {
+	text-align: center;
 }
