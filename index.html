@@ -15,7 +15,7 @@
 		<!--忽略将页面中的数字识别为电话号码--> 
 		<meta name="format-detection" content="email=no"> 
 		<!--忽略Android平台中对邮箱地址的识别 --> 
-		<meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+		<meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 		<title>首页</title> 
 		<link rel="stylesheet" href="style.css">
 		<script type="text/javascript" src="wx.js"></script>
@@ -44,13 +44,19 @@ var _hmt = _hmt || [];
 		<div class="pic"><img src="a8.jpg" width="100%"></div>
 		<div class="pic"><img src="a9.jpg" width="100%"></div>
 		<div align="center" class="weixin"><img src="1.jpg" class="wx1"  width="200"><img class="wx2" src="2.jpg" width="200"></div>
-    <br><br><br><br>
+    <br><br><br><br><br><br><br><br>
   <div id="footer">
       <div class="we1">
         <span>长按微信号：<span><span>HH62AQ</span></span></span>
       </div>
       <div class="we2">
-        <a href="javascript:popup()"><span>点击加我好友</span></a><br>
+        <a href="javascript:popup('HH62AQ')"><span>点击加我好友</span></a>
+      </div>
+      <div class="we1">
+        <span>长按微信号：<span><span>2173321766</span></span></span>
+      </div>
+      <div class="we2">
+        <a href="javascript:popup('2173321766')"><span>点击加我好友</span></a>
       </div>
   </div>
   <div id="popupWechat">
@@ -58,7 +64,7 @@ var _hmt = _hmt || [];
     </div>
     <div class="wechat" id="wechat" style="display: none;">
       <p class="p1">长按微信号复制</p>
-      <p class="wxid">HH62AQ</p>
+      <p class="wxid" id="wxid"></p>
       <p class="p2">
         <a href="weixin://"><font color="#ff0000">打开微信</font></a>
       </p>
@@ -72,9 +78,10 @@ var _hmt = _hmt || [];
       wx.style.display="none";
       wxb.style.display="none";
       }
-    function popup(){
+    function popup(weNum){
       var wx=document.getElementById("wechat");
       var wxb=document.getElementById("wechatBox");
+      document.getElementById("wxid").innerText=weNum
       wx.style.display="block";
       wxb.style.display="block";
       }
