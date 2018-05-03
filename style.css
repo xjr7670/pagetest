@@ -35,9 +35,9 @@ body{font-size:62.5%;}
 #right_ico { position: fixed; top: 40%; right: 2%; width: 70px; }
 
 
-#footer { position: fixed; bottom: 0; width: 100%; max-width: 750px; height: 100px; line-height: 100px; color: #fff; font-size: 18px; text-align:center; vertical-align: middle;}
-#footer .we1 { float: left; padding-top: 0; height: 50%; width: 60%; background: #333; border-bottom: 1px solid #423f40;}
-#footer .we2 { float: left; overflow: hidden; height: 50%; padding-top: 50; width: 40%; background: #da5a14; }
+#footer { position: fixed; bottom: 0; width: 100%; max-width: 750px; height: 50px; line-height: 100px; color: #fff; font-size: 18px; text-align:center; vertical-align: middle;}
+#footer .we1 { float: left; padding-top: 0; width: 60%; background: #333; border-bottom: 1px solid #423f40;}
+#footer .we2 { float: left; overflow: hidden; padding-top: 50; width: 40%; background: #da5a14; }
 #footer .we2 a { color: #fff; vertical-align: top;}
 #footer {
 	line-height: 50px;
@@ -52,7 +52,7 @@ body{font-size:62.5%;}
 }
 
 .wx2 {
-	padding-left: 7%;
+	
 }
 
 #qqright {
